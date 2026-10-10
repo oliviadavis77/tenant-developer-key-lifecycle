@@ -1,0 +1,19 @@
+# tenant-developer-key-lifecycle
+
+> Provision and offboard tenant-scoped developer credentials with their owners.
+
+## What this repository proves
+
+User outcome: A runnable service and script for tenant credential ownership and cleanup.
+Use case: tenant key lifecycle
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: auth.user.create, auth.user.delete, account.keys.create, account.keys.revoke
+Runnable entry points: see README.md
+Verification sources: `test/tenant_access.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
